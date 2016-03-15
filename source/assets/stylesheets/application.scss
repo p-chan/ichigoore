@@ -1,7 +1,10 @@
 @charset "UTF-8";
 
+@import "bourbon";
+
 .hoge {
   font-weight: bold;
+  @include animation(scale 1.0s ease-in, slide 2.0s ease);
 
   .fuga {
     margin: {

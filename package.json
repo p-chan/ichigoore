@@ -13,6 +13,7 @@
     "gulp": "^3.9.1",
     "gulp-imagemin": "^2.4.0",
     "gulp-sass": "^2.2.0",
+    "node-bourbon": "^4.2.3",
     "require-dir": "^0.3.0"
   }
 }
