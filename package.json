@@ -1,0 +1,11 @@
+{
+  "name": "ichigoore",
+  "version": "1.0.0",
+  "description": "A boilerplate of gulp for FICC KYOTO Development Team",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "FICC KYOTO Development Team",
+  "license": "MIT"
+}
