@@ -5,6 +5,12 @@
 .hoge {
   font-weight: bold;
   @include animation(scale 1.0s ease-in, slide 2.0s ease);
+  transform:matrix3d(
+    1, 0, 0, 0,
+    0, 1, 0, 0,
+    0, 0, 1, 0,
+    0, 0, 0, 1
+  );
 
   .fuga {
     margin: {
