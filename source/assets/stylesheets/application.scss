@@ -1,6 +1,8 @@
 @charset "UTF-8";
 
 @import "bourbon";
+@import "object/component/*";
+
 
 .hoge {
   font-weight: bold;
