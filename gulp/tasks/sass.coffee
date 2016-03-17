@@ -3,6 +3,7 @@ sass = require 'gulp-sass'
 bourbon = require 'node-bourbon'
 autoprefixer = require 'gulp-autoprefixer'
 bulkSass = require 'gulp-sass-bulk-import'
+csso = require 'gulp-csso'
 config = require '../config'
 
 bourbon.with config.source.stylesheets
@@ -18,4 +19,5 @@ gulp.task 'sass', ->
       browsers: [ 'last 2 versions' ]
       cascade: false
     )
+    .pipe csso()
     .pipe gulp.dest config.build.stylesheets
