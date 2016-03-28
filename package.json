@@ -9,10 +9,12 @@
   "author": "FICC KYOTO Development Team",
   "license": "MIT",
   "devDependencies": {
+    "browser-sync": "^2.10.0",
     "coffee-script": "^1.10.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-imagemin": "^2.4.0",
+    "gulp-newer": "^1.1.0",
     "gulp-sass": "^2.2.0",
     "gulp-sass-bulk-import": "^1.0.1",
     "node-bourbon": "^4.2.3",
