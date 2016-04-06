@@ -12,6 +12,7 @@
     "coffee-script": "^1.10.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
+    "gulp-csso": "^1.1.0",
     "gulp-imagemin": "^2.4.0",
     "gulp-sass": "^2.2.0",
     "gulp-sass-bulk-import": "^1.0.1",
