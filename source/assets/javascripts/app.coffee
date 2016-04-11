@@ -1,3 +1,5 @@
 $ = require 'jquery'
+offices = require './offices'
+
 $ () ->
-  alert('ok')
+  alert 'FICC' + offices[1]
