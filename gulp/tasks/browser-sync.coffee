@@ -6,4 +6,5 @@ gulp.task "server", ->
   browser {
     server:
       baseDir: "./build"
+    open: false
   }
