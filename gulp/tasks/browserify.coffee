@@ -6,6 +6,7 @@ coffee = require 'gulp-coffee'
 plumber = require 'gulp-plumber'
 source = require 'vinyl-source-stream'
 uglify = require 'gulp-uglify'
+notify = require 'gulp-notify'
 config = require '../config'
 
 gulp.task 'browserify', ->
@@ -16,7 +17,7 @@ gulp.task 'browserify', ->
     bare: false
     header: false
   .bundle()
-  .pipe plumber()
+  .pipe plumber({errorHandler: notify.onError("Error: <%= error.message %>")})
   .pipe source 'app.js'
   .pipe buffer()
   .pipe uglify()
