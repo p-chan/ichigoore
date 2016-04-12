@@ -7,6 +7,7 @@ csso = require 'gulp-csso'
 newer = require 'gulp-newer'
 browserSync = require 'browser-sync'
 plumber = require 'gulp-plumber'
+notify = require 'gulp-notify'
 
 config = require '../config'
 
@@ -17,7 +18,7 @@ gulp.task 'sass', ->
       config.source.stylesheets + '**/*.scss'
       '!' + config.source.stylesheets + '**/_*.scss'
     ]
-    .pipe plumber()
+    .pipe plumber({errorHandler: notify.onError("Error: <%= error.message %>")})
     .pipe newer(config.build.stylesheets)
     .pipe bulkSass()
     .pipe sass {includePaths: bourbon.includePaths}
