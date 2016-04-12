@@ -1,4 +1,3 @@
-
 offices = require './offices'
 
 $ () ->
