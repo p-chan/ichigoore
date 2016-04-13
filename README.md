@@ -13,6 +13,8 @@
 $ git clone git@github.com:p1ch-jp/ichigoore.git
 ```
 
+[More...](https://www.gitbook.com/book/d-kusk/gulp-setting/details)
+
 ## Usage
 ```
 $ npm install
