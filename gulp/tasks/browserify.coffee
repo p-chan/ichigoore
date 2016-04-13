@@ -18,7 +18,12 @@ gulp.task 'browserify', ->
     cache: {}
     packageCache: {}
 
-  bundler = watchify browserify options
+  bundler =
+    if config.isRelease
+      browserify options
+    else
+      watchify browserify options
+
   bundler.transform 'coffeeify'
   bundler.on 'log', gutil.log
 

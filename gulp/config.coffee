@@ -1,4 +1,7 @@
 module.exports =
+  # env
+  isRelease: false
+
   # source
   source:
     root: 'source/'
