@@ -29,7 +29,8 @@
     "node-bourbon": "^4.2.3",
     "require-dir": "^0.3.0",
     "vinyl-buffer": "^1.0.0",
-    "vinyl-source-stream": "^1.1.0"
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.7.0"
   },
   "dependencies": {
     "jquery": "^1.12.3"
