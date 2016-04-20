@@ -1,4 +1,2 @@
-offices = require './offices'
-
 $ () ->
-  alert 'FICC' + offices[1]
+  console.log 'Hello from Ichigoore'

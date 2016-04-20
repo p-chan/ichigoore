@@ -2,30 +2,3 @@
 
 @import "bourbon";
 @import "object/component/*";
-
-h1 {
-  color: ;
-}
-
-.hoge {
-  font-weight: bold;
-  @include animation(scale 1.0s ease-in, slide 2.0s ease);
-  transform:matrix3d(
-    1, 0, 0, 0,
-    0, 1, 0, 0,
-    0, 0, 1, 0,
-    0, 0, 0, 1
-  );
-
-  .fuga {
-    margin: {
-      top: 14px;
-      right: 13px 26px;
-      bottom: 5px 11px;
-    }
-  }
-}
-
-h1 {
-  font-size: 25px;
-}
