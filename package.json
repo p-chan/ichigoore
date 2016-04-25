@@ -25,7 +25,8 @@
     "velocity": "./node_modules/velocity-animate/velocity.min.js",
     "jquery-match-height": "./node_modules/jquery-match-height/dist/jquery.matchHeight.js",
     "cssua": "./node_modules/cssuseragent/cssua.js",
-    "pubsub": "./node_modules/jquery-plugin/dist/ba-tiny-pubsub.js"
+    "pubsub": "./node_modules/jquery-plugin/dist/ba-tiny-pubsub.js",
+    "event-dispatcher": "./node_modules/event-dispatcher/EventDispatcher.js"
   },
   "browserify-shim": {
     "jquery": "$",
@@ -34,7 +35,8 @@
       "depends": [
         "jquery:$"
       ]
-    }
+    },
+    "event-dispatcher": "EventDispatcher"
   },
   "devDependencies": {
     "browser-sync": "^2.10.0",
@@ -63,6 +65,7 @@
   },
   "dependencies": {
     "cssuseragent": "^2.1.31",
+    "event-dispatcher": "github:p1ch-jp/EventDispatcher",
     "jquery": "^1.12.3",
     "jquery-match-height": "^0.7.0",
     "jquery-plugin": "github:cowboy/jquery-tiny-pubsub",

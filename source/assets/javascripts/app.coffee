@@ -4,6 +4,7 @@ require 'velocity'
 require 'jquery-match-height'
 require 'cssua'
 require 'pubsub'
+require 'event-dispatcher'
 
 $ () ->
   console.log 'Hello from Ichigoore'

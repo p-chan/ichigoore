@@ -36,7 +36,7 @@ gulp.task 'browserify', ->
       .pipe plumber({errorHandler: notify.onError("Error: <%= error.message %>")})
       .pipe source 'app.js'
       .pipe buffer()
-      .pipe uglify()
+      # .pipe uglify()
       .pipe gulp.dest config.build.javascripts
 
   bundler.on 'update', bundle
