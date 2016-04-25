@@ -1,6 +1,7 @@
 require 'jquery'
-require 'jquery.easing'
+require 'jquery-easing'
 require 'velocity'
+require 'jquery-match-height'
 
 $ () ->
   console.log 'Hello from Ichigoore'
@@ -18,3 +19,5 @@ $ () ->
       ,
         'duration': 1000
         'easing': 'easeInOutExpo'
+
+  $('.item').matchHeight()

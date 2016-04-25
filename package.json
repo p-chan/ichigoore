@@ -11,16 +11,23 @@
   "browserify": {
     "transform": [
       "coffeeify",
-      "browserify-shim"
+      [ "browserify-shim", {
+        "global": true
+      }]
     ]
   },
   "browser": {
     "jquery": "./node_modules/jquery/dist/jquery.min.js",
-    "jquery.easing": "./node_modules/jquery.easing/jquery.easing.min.js",
-    "velocity": "./node_modules/velocity-animate/velocity.min.js"
+    "jquery-easing": "./node_modules/jquery.easing/jquery.easing.min.js",
+    "velocity": "./node_modules/velocity-animate/velocity.min.js",
+    "jquery-match-height": "./node_modules/jquery-match-height/dist/jquery.matchHeight.js"
   },
   "browserify-shim": {
-    "jquery": "$"
+    "jquery": "$",
+    "jquery-match-height": {
+      "exports": "matchHeight",
+      "depends": [ "jquery:$" ]
+    }
   },
   "devDependencies": {
     "browser-sync": "^2.10.0",
@@ -49,6 +56,7 @@
   },
   "dependencies": {
     "jquery": "^1.12.3",
+    "jquery-match-height": "^0.7.0",
     "jquery.easing": "^1.3.2",
     "velocity-animate": "^1.2.3"
   }
