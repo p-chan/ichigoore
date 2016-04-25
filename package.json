@@ -16,7 +16,8 @@
   },
   "browser": {
     "jquery": "./node_modules/jquery/dist/jquery.min.js",
-    "jquery-easing": "./node_modules/jquery.easing/jquery.easing.min.js"
+    "jquery.easing": "./node_modules/jquery.easing/jquery.easing.min.js",
+    "velocity": "./node_modules/velocity-animate/velocity.min.js"
   },
   "browserify-shim": {
     "jquery": "$"
@@ -48,6 +49,7 @@
   },
   "dependencies": {
     "jquery": "^1.12.3",
-    "jquery.easing": "^1.3.2"
+    "jquery.easing": "^1.3.2",
+    "velocity-animate": "^1.2.3"
   }
 }
