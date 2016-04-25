@@ -3,6 +3,7 @@ require 'jquery-easing'
 require 'velocity'
 require 'jquery-match-height'
 require 'cssua'
+require 'pubsub'
 
 $ () ->
   console.log 'Hello from Ichigoore'

@@ -24,7 +24,8 @@
     "jquery-easing": "./node_modules/jquery.easing/jquery.easing.min.js",
     "velocity": "./node_modules/velocity-animate/velocity.min.js",
     "jquery-match-height": "./node_modules/jquery-match-height/dist/jquery.matchHeight.js",
-    "cssua": "./node_modules/cssuseragent/cssua.js"
+    "cssua": "./node_modules/cssuseragent/cssua.js",
+    "pubsub": "./node_modules/jquery-plugin/dist/ba-tiny-pubsub.js"
   },
   "browserify-shim": {
     "jquery": "$",
@@ -64,6 +65,7 @@
     "cssuseragent": "^2.1.31",
     "jquery": "^1.12.3",
     "jquery-match-height": "^0.7.0",
+    "jquery-plugin": "github:cowboy/jquery-tiny-pubsub",
     "jquery.easing": "^1.3.2",
     "velocity-animate": "^1.2.3"
   }
