@@ -2,6 +2,7 @@ require 'jquery'
 require 'jquery-easing'
 require 'velocity'
 require 'jquery-match-height'
+require 'cssua'
 
 $ () ->
   console.log 'Hello from Ichigoore'
