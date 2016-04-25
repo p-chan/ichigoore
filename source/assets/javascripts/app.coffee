@@ -1,4 +1,4 @@
-$ = require 'jquery'
+require 'jquery'
 
 $ () ->
   console.log 'Hello from Ichigoore'

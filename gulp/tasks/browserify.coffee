@@ -19,7 +19,6 @@ gulp.task 'browserify', ->
     packageCache: {}
 
   bundler = watchify browserify options
-  bundler.transform 'coffeeify'
   bundler.on 'log', gutil.log
 
   handleErrors = () ->
