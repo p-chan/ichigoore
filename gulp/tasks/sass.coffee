@@ -21,7 +21,11 @@ gulp.task 'sass', ->
     .pipe plumber({errorHandler: notify.onError("Error: <%= error.message %>")})
     .pipe newer(config.build.stylesheets)
     .pipe bulkSass()
-    .pipe sass {includePaths: bourbon.includePaths}
+    .pipe sass
+      includePaths: [
+        bourbon.includePaths,
+        './node_modules/../'
+      ]
     .pipe autoprefixer(
       browsers: [ 'last 2 versions' ]
       cascade: false
