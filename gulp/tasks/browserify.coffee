@@ -19,7 +19,6 @@ gulp.task 'browserify', ->
     packageCache: {}
 
   bundler = watchify browserify options
-  bundler.transform 'coffeeify'
   bundler.on 'log', gutil.log
 
   handleErrors = () ->
@@ -37,7 +36,7 @@ gulp.task 'browserify', ->
       .pipe plumber({errorHandler: notify.onError("Error: <%= error.message %>")})
       .pipe source 'app.js'
       .pipe buffer()
-      .pipe uglify()
+      # .pipe uglify()
       .pipe gulp.dest config.build.javascripts
 
   bundler.on 'update', bundle
