@@ -6,6 +6,7 @@ module.exports =
     javascripts: 'source/assets/javascripts/'
     images: 'source/assets/images/'
     fonts: 'source/assets/fonts/'
+    html: 'source/assets/pug'
 
   # build
   build:
@@ -14,3 +15,4 @@ module.exports =
     javascripts: 'build/assets/javascripts/'
     images: 'build/assets/images/'
     fonts: 'build/assets/fonts/'
+    html: 'build/assets/'
